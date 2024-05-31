@@ -7,6 +7,9 @@ You can use this to embed additional authentication steps into your shell script
 
 Custom prompt information can be passed as the first argument.
 
+<img width="372" alt="image" src="https://github.com/singe/tidcli/assets/1150684/999a9a41-75d6-4366-b97b-ee6b425e1c1e">
+
+
 # Building
 
 Build a release binary with swift by running:
