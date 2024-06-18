@@ -23,6 +23,10 @@ if [[ "$?" -ne 0 ]]; then
 fi
 ```
 
+# Installing
+
+Download the appropriate binary from the releases page.
+
 # Building
 
 Build a release binary with swift by running:
@@ -40,3 +44,9 @@ The Touch ID prompt will contain a "Use Password" button, but only biometric aut
 ## Output on standard error
 
 Success and failure messages are output to standard error.
+
+# Sandbox Execution
+
+A macOS sandbox profile is included if you're so inclined. You can execute it with `sandbox-exec` and just need to pass the full path of where the binary is located. For example:
+
+`sandbox-exec -D_PWD="$PWD/tidcli" -f tidcli.sb tidcli`

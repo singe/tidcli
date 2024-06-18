@@ -1,0 +1,6 @@
+(version 1)
+(deny default)
+(allow process-exec* (literal (param "_PWD")))
+(allow file-read-data (literal "/"))
+(allow file-read-metadata (literal "/System/Library/Frameworks/LocalAuthentication.framework/Support/SharedUtils.framework/Versions/A"))
+(allow mach-lookup (global-name "com.apple.CoreAuthentication.agent.libxpc"))
